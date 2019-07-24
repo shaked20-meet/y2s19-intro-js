@@ -9,15 +9,29 @@
     <h1>Guessing Game</h1>
 
     <script>
-/* STARTING CODE */
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * Math.floor(max - min)) + min;
-}
+		/* STARTING CODE */
+		function getRandomInt(min, max) {
+		    return Math.floor(Math.random() * Math.floor(max - min)) + min;
+		}
 
-var randomInt = getRandomInt(1, 100);
-/* END STARTING CODE */
+		var randomInt = getRandomInt(1, 100);
+		/* END STARTING CODE */
 
-// your code goes under here
+		// your code goes under here
+		for(var i = 0; i < 3; i++){
+				guess = prompt("guess a number!")
+			if(guess > randomInt){
+				alert("Too high!")
+			}
+			else if(guess < randomInt){
+				alert("Too low!")
+			}
+			else{
+				alert("You guessed right! Well done!")
+			}
+		}
+		alert(randomInt)
+		
 
     </script>
 </body>
